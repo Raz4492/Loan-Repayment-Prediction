@@ -1,0 +1,48 @@
+html, body {
+      min-height: 100%;
+      width: 94%;
+      }
+
+.btn-block {
+      margin-top: 10px;
+      text-align: center;
+      }
+      button {
+      width: 150px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background:  #446AD8;
+      font-size: 16px;
+      color: #fff;
+      cursor: pointer;
+      }
+      button:hover {
+      background:  #a3c2c2;
+      }
+      #back {
+      margin-left: 160px;
+
+      }
+.limee{
+      margin-top: 50px;
+      margin-left: 150px;
+      width: 80%;
+      height: auto;
+      background: no-repeat center center fixed;
+      #background-image: url("a.jpg");
+      background-color:#F0F0F0;
+      background-blend-mode: lighten;
+      background-size: 1920px 1280px;
+      background-size: cover;}
+
+p {
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+      color: #063970;
+      line-height: 22px;
+      font-weight: bold;
+      }

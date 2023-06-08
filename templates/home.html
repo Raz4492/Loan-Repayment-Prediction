@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Investment repayment System</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+{%block content%}{%endblock%}
+<body >
+<div class="container">
+  <form action="/result" method="POST">
+    <div class="banner">
+      <!--<h1>Investment Repayment Prediction</h1>-->
+    </div>
+    <br/>
+    <h2>
+      <center>
+        INVESTMENT REPAYMENT PREDICTION
+      </center>
+    </h2>
+    <br/>
+    <div class="colums">
+
+      <div class="item">
+        <label for="fname"> Requested Investment Amount<span>*</span></label>
+        <input id="fname" type="text" name="Current Loan Amount" placeholder="Enter Investment amount.." required/>
+      </div>
+      <div class="item">
+        <label for="lname"> Term<span>*</span></label>
+        <!--<select  id="lname" type="value"  name="Term" required="required">
+          <option value=" " disabled selected hidden>Select</option>
+           <option value="0">Short-term</option>
+           <option value="1">Long-term</option>
+        </select>-->
+        <input id="lname" type="text" name="Term" placeholder="Short-term=0; Long-term=1" required/>
+      </div>
+      <div class="item">
+        <label for="phone">Monthly Payment Amount<span>*</span></label>
+        <input id="phone" type="text"   name="Monthly Debt" placeholder="Enter Monthly Payment Amount.." required/>
+      </div>
+
+      <div class="item">
+        <label for="title">Credit Score<span>*</span></label>
+        <input id="title" type="text" name="Credit Score" placeholder="Enter credit score.." required/>
+      </div>
+      <div class="item">
+        <label for="org">Annual Income<span>*</span></label>
+        <input id="org" type="text"   name="Annual Income" placeholder="Enter annual income.." required/>
+      </div>
+      <div class="item">
+        <label for="eaddress">Home Ownership/others<span>*</span></label>
+        <input id="eaddress" type="text"   name="Home Ownership" placeholder="OwnHome=1; Otherwise=0" required/>
+      </div>
+
+      <div class="item">
+        <label for="fax">Years of Credit History<span>*</span></label>
+        <input id="fax" type="text"   name="Years of Credit History" placeholder="Enter Years of Credit History.. " required/>
+      </div>
+      <div class="item">
+        <label for="address1">Months since last Delinquency<span>*</span></label>
+        <input id="address1" type="text"   name="Months Since Last Delinquent" placeholder="Enter Months since last delinquency.." required/>
+      </div>
+      <div class="item">
+        <label for="address2">Number of Open Credit Card Accounts<span>*</span></label>
+        <input id="address2" type="text"   name="Number of Open Accounts" placeholder="Enter No of Open Credit Card Accounts " required/>
+      </div>
+      <div class="item">
+        <label for="city">Number of Credit Card Problems<span>*</span></label>
+        <input id="city" type="text"   name="Number of Credit Problems" placeholder="Enter No of Credit Problems" required/>
+      </div>
+      <div class="item">
+        <label for="state">Current Credit Card Balance<span>*</span></label>
+        <input id="state" type="text"   name="Current Credit Balance" placeholder="Enter Current Credit Balance" required/>
+      </div>
+      <div class="item">
+        <label for="code">Maximum Limit of Credits Cards<span>*</span></label>
+        <input id="code" type="text"   name="Maximum Open Credits" placeholder="Enter Maximum Open Credits.." required/>
+      </div>
+      <div class="item">
+        <label for="city">Legal Support Available, if Required<span>*</span></label>
+        <input id="Bank" type="text"   name="Bankruptcies" placeholder="Yes =1; No=0" required/>
+      </div>
+      <div class="item">
+        <label for="city">Borrower Properties under Sanction/Encumbrance <span>*</span></label>
+        <input id="Tax" type="text"   name="Tax Liens" placeholder="Yes=1; No=0" required/>
+      </div>
+      <div class="item">
+        <label for="city">Years in current Job/Business<span>*</span></label>
+        <input id="Year" type="text"   name="Years in current job" placeholder="Enter years in current Job/Business.." required/>
+      </div>
+    </div>
+
+    <div class="btn-block">
+      <button type="reset" value="Reset">Reset</button>
+      <button type="submit" href="/">Predict</button>
+    </div>
+  </form>
+</div>
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</html>
