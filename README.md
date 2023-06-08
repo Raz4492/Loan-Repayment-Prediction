@@ -1,3 +1,6 @@
+
+![Profile Views](https://komarev.com/ghpvc/?username=your-github-Raz4492)
+
 # Loan Repayment Prediction
 
 ![GitHub](https://img.shields.io/github/license/Raz4492/Loan-Repayment-Prediction)
